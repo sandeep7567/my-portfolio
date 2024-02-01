@@ -3,8 +3,7 @@
 import { navActionData } from "@/data/nav-action-data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { FC, useState } from "react";
+import { FC } from "react";
 
 interface NavActionProps {}
 
@@ -15,7 +14,8 @@ export const NavAction: FC<NavActionProps> = ({}) => {
       {navActionData.map((nav, i) => (
         <Link
           className={cn(
-            location.href === nav?.href ? "text-black" : "text-black/50"
+            "text-[0.875rem] leading-[1.05rem] text-right cursor-pointer",
+            nav?.href ? "text-black font-normal" : "text-black font-medium"
           )}
           href={nav?.href}
           key={nav?.href}

@@ -11,13 +11,13 @@ export const Social: FC<SocialProps> = ({}) => {
   return (
     <div className='flex gap-x-4 items-center'>
       <a href='https://github.com/sandeep7567' target='_blank' className='cursor-pointer'>
-        <BsGithub />
+        <BsGithub size={24} />
       </a>
       <a href='https://www.google.com' className='cursor-pointer'>
-      <BsTwitter/>
+      <BsTwitter size={24}/>
       </a>
       <a href='https://www.google.com' target='_blank' className='cursor-pointer'>
-      <BsLinkedin/>
+      <BsLinkedin size={24}/>
       </a>
     </div>
   )
