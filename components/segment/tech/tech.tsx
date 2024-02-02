@@ -9,21 +9,21 @@ import { CardGridLayout } from "@/components/ui/card/card-grid-layout";
 interface TechProps {}
 
 export const Tech: FC<TechProps> = ({}) => {
-  const { software, frontend, backend, database, stateManagement } = techData;
   return (
     <div id="tech" className="mt-5 space-y-3">
       {/* Heading */}
       <Heading>Tech Stack</Heading>
 
-      <div className="p-6 xl:p-0 space-y-4">
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 gap-6">
-          <CardWrapper title="Frontend" data={frontend} />
-          <CardWrapper title="Backend" data={backend} />
-          <CardWrapper title="Database" data={database} />
-          <CardWrapper title="Software" data={software} />
-          <CardWrapper title="State Management" data={stateManagement} />
-        </div>
-      </div>
+      {/* only customize grid cols 5 for XL screen and more using CardGridLayout */}
+      <CardGridLayout open className="xl:grid-cols-5">
+        {techData?.map((tech, i) => (
+          <CardWrapper
+            title={tech?.key}
+            data={tech?.values}
+            key={tech?.key}
+          ></CardWrapper>
+        ))}
+      </CardGridLayout>
     </div>
   );
 };

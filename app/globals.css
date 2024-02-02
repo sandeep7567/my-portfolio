@@ -9,7 +9,6 @@ body,
   background: var(--gradient);
   scroll-behavior: smooth;
   scroll-padding: 100px;
-
 }
 
 *::after::before{

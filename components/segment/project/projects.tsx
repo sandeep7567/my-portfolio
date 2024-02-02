@@ -17,7 +17,7 @@ export const Projects = () => {
     <div id="project" className="mt-5 mb-8">
       <div
         className={cn(
-          "flex justify-center sm:justify-start items-center gap-x-3",
+          "flex justify-start mr-auto w-1/2 sm:justify-start items-center gap-x-3",
           isMode ? "mb-5" : "-mb-10 lg:-mb-16"
         )}
       >

@@ -27,13 +27,13 @@ export const Navbar: FC<NavbarProps> = ({}) => {
       window.removeEventListener("scroll", controlNavbar);
     };
   }, []);
-
+console.log(show);
   return (
-    <div className="w-full relative">
+    <div className="relative">
       <div
         className={cn(
-          "fixed top-0 w-full z-50 transition-all duration-200",
-          show ? "shadow bg-card-foreground" : "shadow-none bg-transparent"
+          "fixed top-0 w-full z-[9999] transition-all p-6 py-0 xl:p-0 duration-200",
+          show ? "shadow bg-card-foreground" : "shadow-none bg-transparent translate-y-0"
         )}
         role="navigation"
       >
@@ -41,7 +41,7 @@ export const Navbar: FC<NavbarProps> = ({}) => {
           <nav className="flex w-full h-[4.25rem] justify-between items-center">
             {/* <div className="flex w-full justify-start gap-x-10 flex-1 items-center"> */}
             <Link href={"/"}>
-              <h1 className="text-[1.5625rem] leading-6 cursor-pointer font-normal">
+              <h1 className="text-lg sm:text-[1.5625rem] leading-6 cursor-pointer font-normal">
                 Sandeep Thakur
               </h1>
             </Link>

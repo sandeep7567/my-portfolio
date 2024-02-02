@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen mx-auto text-black relative font-sans antialiased",
+          "min-h-screen mx-auto text-black relative font-sans antialiased overflow-x-hidden",
           inter.variable
         )}
       >

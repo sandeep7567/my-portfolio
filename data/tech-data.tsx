@@ -1,29 +1,35 @@
-// import amazonImage from "@/public/projects/amazon-clone.jpeg"
-// import spotifyImage from "@/public/projects/spotify-clone.gif"
+export const techData = [
+  {
+    key: "frontend",
+    values: [
+      "HTML",
+      "CSS",
+      "JS",
+      "Tailwind",
+      "Typescript",
+      "React Js",
+      "Next Js 13",
+    ],
+  },
 
-export const techData = {
-  frontend: [
-    "HTML",
-    "CSS",
-    "JS",
-    "Tailwind",
-    "Typescript",
-    "React Js",
-    "Next Js 13",
-    // "shadcn-ui",
-    // "Redux & Redux Toolkit",
-    // "Zustand",
-    // "Recoil",
-  ],
+  { key:"backend", values: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"] },
 
-  backend: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"],
+  { key: "database", values: ["MongoDB", "MySql", "PostgreSQL"] },
 
-  database: ["MongoDB", "MySql", "PostgreSQL"],
+  {
+    key: "software", values: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
+  },
 
-  software: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
-
-  stateManagement: ["shadcn-ui", "Redux", "Redux Toolkit", "Zustand", "Recoil"],
-};
+  {
+    key: "stateManagement", values: [
+      "shadcn-ui",
+      "Redux",
+      "Redux Toolkit",
+      "Zustand",
+      "Recoil",
+    ],
+  },
+];
 
 export interface ProjectInfoType {
   _id: number;
