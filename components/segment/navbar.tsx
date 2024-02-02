@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/container";
 import { NavAction } from "@/components/segment/nav/nav-action";
 import { Social } from "@/components/segment/nav/social";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface NavbarProps {}
 
@@ -39,9 +40,11 @@ export const Navbar: FC<NavbarProps> = ({}) => {
         <Container>
           <nav className="flex w-full h-[4.25rem] justify-between items-center">
             {/* <div className="flex w-full justify-start gap-x-10 flex-1 items-center"> */}
-            <h1 className="text-[1.5625rem] leading-6 cursor-pointer font-normal">
-              Sandeep Thakur
-            </h1>
+            <Link href={"/"}>
+              <h1 className="text-[1.5625rem] leading-6 cursor-pointer font-normal">
+                Sandeep Thakur
+              </h1>
+            </Link>
             {/* </div> */}
             <div className="flex justify-between gap-x-10 items-center">
               <NavAction />

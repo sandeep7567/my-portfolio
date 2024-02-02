@@ -20,9 +20,9 @@ export const techData = {
 
   database: ["MongoDB", "MySql", "PostgreSQL"],
 
-  software: ["VsCode", "GIT", "Postman", "Cloudinary"],
+  software: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
 
-  stateManagement: ["shadcn-ui", "Redux & Redux Toolkit", "Zustand", "Recoil"],
+  stateManagement: ["shadcn-ui", "Redux", "Redux Toolkit", "Zustand", "Recoil"],
 };
 
 export interface ProjectInfoType {
@@ -77,13 +77,10 @@ export const projectInfo: ProjectInfoType[] = [
       "NodeJs",
       "ExpressJs",
       "JWT Auth",
-      "Shadcn",
       "React Hook Form",
-      "Zustand",
+      "Redux and Redux Toolkit",
       "Tailwind CSS",
       "Typescript",
-      "TanStack Table",
-      "Sooner",
     ],
     gitLink: "",
     liveLink: "",
