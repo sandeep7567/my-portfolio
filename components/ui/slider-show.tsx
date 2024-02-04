@@ -43,7 +43,7 @@ export const SliderShow: FC<SliderShowProps> = ({ open, projectData }) => {
             key={project?._id}
             className="basis-[65%] pl-2 md:pl-4 sm:basis-[60%] md:basis-[50%]  lg:basis-[30%] items-center"
           >
-            <div className="p-1 flex aspect-square items-center justify-center group">
+            <div className="p-1 relative flex aspect-square items-center justify-center group">
               <ProjectCard
                 id={project?._id}
                 title={project?.title}

@@ -3,17 +3,15 @@
 import React, { FC, useState } from "react";
 import {
   Card,
-  CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { CheckIcon, Link2, Link2Icon } from "lucide-react";
+import { Link2, Link2Icon } from "lucide-react";
 import { Button } from "../button";
 import Link from "next/link";
 import Image from "next/image";
-import { redirect, useRouter } from "next/navigation";
 
 interface ProjectCardProps {
   id: number;
@@ -39,7 +37,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
   return (
     <Card
       className={cn(
-        "w-[380px] h-[380px] flex-col justify-between  cursor-pointer flex",
+        "w-[380px] h-[380px] flex-col justify-between border border-border/25 border-collapse border-opacity-25 dark:hover:bg-sky-100 hover:bg-sky-100  hover:bg-opacity-25 transition cursor-pointer flex",
         isHovered === id ? className : "h-fit"
       )}
       onMouseEnter={() => setIsHovered(id)}
@@ -54,6 +52,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
           alt={"project"}
           width={700}
           height={700}
+          loading="lazy"
           className={cn(
             "h-auto w-auto object-cover transition-all aspect-video overflow-hidden rounded-xl group-hover:rounded-none group-hover:rounded-t-xl"
           )}
@@ -67,7 +66,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
         )}
       >
         <CardHeader>
-          <CardTitle className="text-lg">{title}</CardTitle>
+          <CardTitle className="text-base group-hover:text-sky-700">{title}</CardTitle>
           <div className="flex flex-wrap gap-x-4 ">
             {techList.map((tech, index) => (
               <div key={index}>
@@ -81,7 +80,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
         <CardFooter className="flex items-center gap-x-2 bg-transparent">
           <Button
             size={"sm"}
-            variant={"indigo"}
+            variant={"default"}
             className="rounded-[0.4rem] w-full"
             asChild
           >
@@ -91,7 +90,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
           </Button>
           <Button
             size={"sm"}
-            variant={"indigo"}
+            variant={"default"}
             className="rounded-[0.4rem] w-full"
             asChild
             onClick={(e) => e.stopPropagation()}

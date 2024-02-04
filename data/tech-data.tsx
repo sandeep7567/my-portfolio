@@ -1,6 +1,6 @@
 export const techData = [
   {
-    key: "frontend",
+    key: "Frontend",
     values: [
       "HTML",
       "CSS",
@@ -9,19 +9,20 @@ export const techData = [
       "Typescript",
       "React Js",
       "Next Js 13",
+      // "shadcn-ui",
     ],
   },
 
-  { key:"backend", values: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"] },
+  { key:"Backend", values: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"] },
 
-  { key: "database", values: ["MongoDB", "MySql", "PostgreSQL"] },
+  { key: "Database", values: ["MongoDB", "MySql", "PostgreSQL"] },
 
   {
-    key: "software", values: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
+    key: "Software", values: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
   },
 
   {
-    key: "stateManagement", values: [
+    key: "State Management", values: [
       "shadcn-ui",
       "Redux",
       "Redux Toolkit",

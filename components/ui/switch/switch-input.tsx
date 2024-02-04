@@ -12,7 +12,6 @@ export const SwitchInput: FC<SwitchInputProps> = ({
   className
 }) => {
   const onChange  = (value: boolean) => {
-    console.log(value);
     setIsMode(value);
   };
 
@@ -20,7 +19,7 @@ export const SwitchInput: FC<SwitchInputProps> = ({
       <Switch
         onCheckedChange={(value:boolean) => onChange(value)}
         id="airplane-mode"
-        className={cn(className)}
+        className={cn("",className)}
       />
   )
 };

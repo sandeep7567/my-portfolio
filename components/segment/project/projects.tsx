@@ -22,7 +22,7 @@ export const Projects = () => {
         )}
       >
         <Heading>Projects</Heading>
-        <SwitchInput setIsMode={setIsMode} className="z-50" />
+        <SwitchInput setIsMode={setIsMode} className="z-50 dark:bg-white" />
       </div>
       
       <SliderShow projectData={projectInfo} open={isMode} />
