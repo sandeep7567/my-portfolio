@@ -3,8 +3,7 @@
 import { Linkedin } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
-import { BsGithub, BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { ImInstagram } from "react-icons/im";
+import { BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
 
 interface SocialProps {}
 
@@ -16,24 +15,35 @@ export const Social: FC<SocialProps> = ({}) => {
         target="_blank"
         className="cursor-pointer"
       >
-        <BsGithub size={24} className="fill-green-500" />
-      </Link>
-      <Link href="https://www.google.com" target="_blank" className="cursor-pointer">
-        <BsTwitter size={24} className="fill-sky-400" />
+        <BsGithub size={24} color="#f43f5e"  />
       </Link>
       <Link
-        href="https://www.google.com"
+        href="https://twitter.com/Sandeep7567"
         target="_blank"
         className="cursor-pointer"
       >
-        <Linkedin size={24} color="#1d73a0"/>
+        <BsTwitter size={24} color="#38bdf8" />
       </Link>
       <Link
-        href="https://www.google.com"
+        href="https://www.linkedin.com/in/sandeepthakur3000/"
+        target="_blank"
+        className="cursor-pointer"
+      >
+        <BsLinkedin size={24} color="#0a66c2" />
+      </Link>
+      <Link
+        href="https://www.instagram.com/"
         target="_blank"
         className="cursor-pointer"
       >
         <BsInstagram size={24} color={"#b5179e"} />
+      </Link>
+      <Link
+        href="https://www.whatsapp.com/"
+        target="_blank"
+        className="cursor-pointer"
+      >
+        <BsWhatsapp size={24} color={"#1ad52d"} />
       </Link>
     </div>
   );
