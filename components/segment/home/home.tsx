@@ -34,7 +34,7 @@ export const Home = () => {
           height={700}
           quality={100}
           loading="lazy"
-          src={"/projects/spotify-clone.gif"}
+          src={"/projects/profile-picture.jpg"}
           className="object-cover bg-no-repeat bg-center aspect-square rounded-full p-0.5"
         />
       </div>
