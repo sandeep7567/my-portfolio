@@ -38,14 +38,14 @@ export const ProjectCard: FC<ProjectCardProps> = ({
     <Card
       className={cn(
         "w-[380px] h-[380px] flex-col justify-between border border-border/25 border-collapse border-opacity-25 dark:hover:bg-sky-100 hover:bg-sky-100  hover:bg-opacity-25 transition cursor-pointer flex",
-        isHovered === id ? className : "h-fit"
+        isHovered === id ? `scale-center ${className}` : "h-fit"
       )}
       onMouseEnter={() => setIsHovered(id)}
       onMouseLeave={() => setIsHovered(0)}
     >
       {/* <Link href={gitLink || "/"} target="_blank" className="block"> */}
       <div className={cn(
-        "overflow-hidden rounded-md",
+        "rounded-md",
       )}>
         <Image
           src={`/projects/${img}`}
