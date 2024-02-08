@@ -1,9 +1,9 @@
 "use client";
 
-import { Linkedin } from "lucide-react";
 import Link from "next/link";
 import { FC } from "react";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { Instagram, Github, Linkedin, Twitter, } from "lucide-react";
 
 interface SocialProps {}
 

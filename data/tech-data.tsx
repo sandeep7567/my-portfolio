@@ -1,4 +1,9 @@
-export const techData = [
+export interface TechDataType {
+  key: "Frontend" | "Backend" | "Database" | "Software" | "State Management";
+  values: string[];
+}
+
+export const techData: TechDataType[] = [
   {
     key: "Frontend",
     values: [
@@ -13,22 +18,21 @@ export const techData = [
     ],
   },
 
-  { key:"Backend", values: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"] },
+  {
+    key: "Backend",
+    values: ["Node Js", "Express Js", "Next Auth Js", "Auth Js V5"],
+  },
 
   { key: "Database", values: ["MongoDB", "MySql", "PostgreSQL"] },
 
   {
-    key: "Software", values: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
+    key: "Software",
+    values: ["VsCode", "GIT", "Postman", "Cloudinary", "AWS S3 Bucket Basic"],
   },
 
   {
-    key: "State Management", values: [
-      "shadcn-ui",
-      "Redux",
-      "Redux Toolkit",
-      "Zustand",
-      "Recoil",
-    ],
+    key: "State Management",
+    values: ["shadcn-ui", "Redux", "Redux Toolkit", "Zustand", "Recoil"],
   },
 ];
 
@@ -53,8 +57,8 @@ export const projectInfo: ProjectInfoType[] = [
       "Tailwind CSS",
       "Typescript",
     ],
-    gitLink: "",
-    liveLink: "",
+    gitLink: "https://github.com/sandeep7567/eshop-store",
+    liveLink: "https://eshop-store-psi.vercel.app",
   },
   {
     _id: 2,
@@ -72,7 +76,7 @@ export const projectInfo: ProjectInfoType[] = [
       "Sooner",
     ],
     gitLink: "https://github.com/sandeep7567/eshop-admin",
-    liveLink: "",
+    liveLink: "https://eshop-admin-alpha.vercel.app",
   },
   {
     _id: 3,
@@ -89,8 +93,10 @@ export const projectInfo: ProjectInfoType[] = [
       "Tailwind CSS",
       "Typescript",
     ],
-    gitLink: "https://github.com/sandeep7567/StudyNotion-A-Learning-Management-System",
-    liveLink: "https://studynotion-a-learning-management-system-frontend.vercel.app/",
+    gitLink:
+      "https://github.com/sandeep7567/StudyNotion-A-Learning-Management-System",
+    liveLink:
+      "https://studynotion-a-learning-management-system-frontend.vercel.app/",
   },
   {
     _id: 4,
@@ -143,11 +149,11 @@ export const projectInfo: ProjectInfoType[] = [
   },
   {
     _id: 7,
-    img: "coding-with-sandeep.png",
+    img: "sandeep-portfolio.png",
     title: "Coding With Sandeep",
     techList: ["Next Js", "React Js", "Typescript", "Shadcn", "Embla Carousel"],
     gitLink: "https://github.com/sandeep7567/my-portfolio",
-    liveLink: "",
+    liveLink: "https://sandeep-portfolio-foph2o0ju-sandeep7567.vercel.app/",
   },
   {
     _id: 8,
@@ -183,11 +189,7 @@ export const projectInfo: ProjectInfoType[] = [
     _id: 10,
     img: "razorpay-clone.webp",
     title: "Razorpay Clone",
-    techList: [
-      "HTML",
-      "CSS",
-      "Tailwind CSS",
-    ],
+    techList: ["HTML", "CSS", "Tailwind CSS"],
     gitLink: "https://github.com/sandeep7567/Razorpay-Clone",
     liveLink: "https://razorpay-clone-sand-psi.vercel.app/",
   },
