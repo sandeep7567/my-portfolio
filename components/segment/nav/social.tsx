@@ -3,13 +3,19 @@
 import Link from "next/link";
 import { FC } from "react";
 import { BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
-import { Instagram, Github, Linkedin, Twitter, } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-interface SocialProps {}
+interface SocialProps {
+  className?: React.ReactNode
+}
 
-export const Social: FC<SocialProps> = ({}) => {
+export const Social: FC<SocialProps> = ({
+  className
+}) => {
   return (
-    <div className="flex gap-x-4 items-center xl:mr-0">
+    <div className={cn(
+      "flex gap-x-4 items-center xl:mr-0", className,
+    )}>
       <Link
         href="https://github.com/sandeep7567"
         target="_blank"

@@ -49,7 +49,7 @@ export const Navbar: FC<NavbarProps> = ({}) => {
             {/* </div> */}
             <div className="flex justify-between gap-x-10 items-center">
               <NavAction />
-              <Social />
+              <Social className="hidden lg:flex" />
               <ThemeToggleButton/>
             </div>
           </nav>

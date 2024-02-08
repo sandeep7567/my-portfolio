@@ -8,13 +8,15 @@ interface FooterProps {}
 
 export const Footer: FC<FooterProps> = ({}) => {
   return (
+      <div className="border-collapse border-t border-border/20 dark:border-white/20 bg-white dark:bg-transparent">
     <Container>
-      <footer className="w-full flex p-4 px-0 justify-between items-center">
-        <p className="text-[0.85rem] dark:text-primary/70 text-primary-foreground/70">
-          &copy; 2024 portfolio sandeep thakur All rights reserved.
-        </p>
-        <Social />
-      </footer>
+        <footer className="w-full flex flex-col md:flex-row gap-y-6 md:gap-y-0 p-8 md:px-6 justify-between items-center">
+          <p className="text-xs md:text-sm dark:text-primary/70 text-primary-foreground/70">
+            &copy; 2024 portfolio sandeep thakur All rights reserved.
+          </p>
+          <Social />
+        </footer>
     </Container>
+      </div>
   );
 };

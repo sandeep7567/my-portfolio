@@ -10,7 +10,7 @@ interface TechProps {}
 
 export const Tech: FC<TechProps> = ({}) => {
   return (
-    <div id="tech" className="mt-5 xl:space-y-3">
+    <div id="tech" className="mt-14 sm:mt-5 xl:space-y-3">
       {/* Heading */}
       <Heading>Tech Stack</Heading>
 
