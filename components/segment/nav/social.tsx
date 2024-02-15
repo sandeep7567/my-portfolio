@@ -2,26 +2,29 @@
 
 import Link from "next/link";
 import { FC } from "react";
-import { BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsTwitter,
+  BsWhatsapp,
+} from "react-icons/bs";
 import { cn } from "@/lib/utils";
 
 interface SocialProps {
-  className?: React.ReactNode
+  className?: React.ReactNode;
 }
 
-export const Social: FC<SocialProps> = ({
-  className
-}) => {
+export const Social: FC<SocialProps> = ({ className }) => {
+  const valid = true;
   return (
-    <div className={cn(
-      "flex gap-x-4 items-center xl:mr-0", className,
-    )}>
+    <div className={cn("flex gap-x-4 items-center xl:mr-0", className)}>
       <Link
         href="https://github.com/sandeep7567"
         target="_blank"
         className="cursor-pointer"
       >
-        <BsGithub size={24} color="#f43f5e"  />
+        <BsGithub size={24} color="#f43f5e" />
       </Link>
       <Link
         href="https://twitter.com/Sandeep7567"
@@ -37,20 +40,24 @@ export const Social: FC<SocialProps> = ({
       >
         <BsLinkedin size={24} color="#0a66c2" />
       </Link>
-      <Link
-        href="https://www.instagram.com/"
-        target="_blank"
-        className="cursor-pointer"
-      >
-        <BsInstagram size={24} color={"#b5179e"} />
-      </Link>
-      <Link
-        href="https://www.whatsapp.com/"
-        target="_blank"
-        className="cursor-pointer"
-      >
-        <BsWhatsapp size={24} color={"#1ad52d"} />
-      </Link>
+      {/* {!valid && ( */}
+        {/* <> */}
+          <Link
+            href={valid ? "/" : "https://www.instagram.com/"}
+            // target="_blank"
+          className="cursor-not-allowed"
+          >
+            <BsInstagram size={24} color={"#b5179e"} />
+          </Link>
+          <Link
+            href={valid ? "/" : "https://www.whatsapp.com/"}
+            // target="_blank"
+            className="cursor-not-allowed"
+          >
+            <BsWhatsapp size={24} color={"#1ad52d"} />
+          </Link>
+        {/* </> */}
+      {/* // )} */}
     </div>
   );
 };
