@@ -40,24 +40,20 @@ export const Social: FC<SocialProps> = ({ className }) => {
       >
         <BsLinkedin size={24} color="#0a66c2" />
       </Link>
-      {/* {!valid && ( */}
-        {/* <> */}
-          <Link
-            href={valid ? "/" : "https://www.instagram.com/"}
-            // target="_blank"
-          className="cursor-not-allowed"
-          >
-            <BsInstagram size={24} color={"#b5179e"} />
-          </Link>
-          <Link
-            href={valid ? "/" : "https://www.whatsapp.com/"}
-            // target="_blank"
-            className="cursor-not-allowed"
-          >
-            <BsWhatsapp size={24} color={"#1ad52d"} />
-          </Link>
-        {/* </> */}
-      {/* // )} */}
+      <Link
+        href={valid ? "/" : "https://www.instagram.com/"}
+        // target="_blank"
+        className="cursor-not-allowed"
+      >
+        <BsInstagram size={24} color={"#b5179e"} />
+      </Link>
+      <Link
+        href={valid ? "/" : "https://www.whatsapp.com/"}
+        // target="_blank"
+        className="cursor-not-allowed"
+      >
+        <BsWhatsapp size={24} color={"#1ad52d"} />
+      </Link>
     </div>
   );
 };
